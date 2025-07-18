@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub - Your Dream Career Awaits</title>
+    <meta name="description" content="Where talent meets opportunity, and dreams become careers that inspire.">
+    <link rel="stylesheet" href="landingPage.css">
+</head>
+<body>
+    <!-- Background Container -->
+    <div class="background-container">
+        <div class="background-slide active" style="background-image: url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=2000&q=80')"></div>
+        <div class="background-slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000&q=80')"></div>
+        <div class="background-slide" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=2000&q=80')"></div>
+        <div class="background-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Kenyan Pride</div>
+            <div class="nav-links desktop-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#careers" class="nav-link">Careers</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#careers" class="nav-link">Careers</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Your Dream Career
+                    <span class="highlight">Awaits You</span>
+                </h1>
+                <p class="hero-subtitle">
+                    "Where talent meets opportunity, and dreams become careers that inspire."
+                </p>
+                <div class="hero-buttons">
+                    <a href="signup/signUp.html"><button class="btn btn-primary">Explore Careers</button></a>
+                    <button class="btn btn-secondary">Join Today</button>
+                </div>
+            </div>
+
+            <!-- Floating Career Cards -->
+            <div class="cards-container">
+                <div class="career-card" data-delay="0">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&q=80" alt="Software Developer">
+                        <div class="card-gradient blue-gradient"></div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16,18 22,12 16,6"></polyline>
+                                <polyline points="8,6 2,12 8,18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Software Developer</h3>
+                        <p class="card-description">Build the future with code</p>
+                    </div>
+                </div>
+
+                <div class="career-card" data-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=500&q=80" alt="Business Manager">
+                        <div class="card-gradient purple-gradient"></div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Business Manager</h3>
+                        <p class="card-description">Lead teams to success</p>
+                    </div>
+                </div>
+
+                <div class="career-card" data-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" alt="Marketing Specialist">
+                        <div class="card-gradient green-gradient"></div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Marketing Specialist</h3>
+                        <p class="card-description">Connect brands with people</p>
+                    </div>
+                </div>
+
+                <div class="career-card" data-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80" alt="Healthcare Professional">
+                        <div class="card-gradient red-gradient"></div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Healthcare Professional</h3>
+                        <p class="card-description">Care for others, care for life</p>
+                    </div>
+                </div>
+
+                <div class="career-card" data-delay="400">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="HR Specialist">
+                        <div class="card-gradient indigo-gradient"></div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="m22 21-3-3"></path>
+                                <circle cx="19" cy="16" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">HR Specialist</h3>
+                        <p class="card-description">Build amazing teams</p>
+                    </div>
+                </div>
+                 <div class="career-card" data-delay="400">
+                    <div class="card-image">
+                        <img src="https://www.gainhealth.org/sites/default/files/2025-02/com_8080.jpg" alt="Kazi ndogo">
+                        <div class="card-gradient indigo-gradient"></div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="m22 21-3-3"></path>
+                                <circle cx="19" cy="16" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Blue Collar Jobs</h3>
+                        <p class="card-description">Great things comes in small packages</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <p class="cta-text">Ready to start your journey?</p>
+                <button class="btn btn-gradient">Get Started Now</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="landingpage.js"></script>
+</body>
+</html>

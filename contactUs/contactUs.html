@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Modern Design</title>
+    <meta name="description" content="Get in touch with us through our modern contact interface" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap">
+    
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="contactUs.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <!-- Animated Background Elements -->
+            <div class="bg-elements">
+                <div class="bg-circle bg-circle-1"></div>
+                <div class="bg-circle bg-circle-2"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title gradient-text" id="heroText">Get in Touch</h1>
+                    
+                    <p class="hero-description">
+                        Experience modern communication with our beautifully designed contact interface. 
+                        We're here to bring your ideas to life.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="modern-btn" onclick="scrollToSection('contact-form')">
+                            Start Conversation
+                        </button>
+                        
+                        <button class="outline-btn" onclick="scrollToSection('contact-cards')">
+                            Explore Options
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-indicator-inner">
+                        <div class="scroll-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Cards Section -->
+        <section id="contact-cards" class="contact-cards-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Choose Your Way</h2>
+                    <p class="section-description">
+                        Multiple ways to connect with us. Pick the method that works best for you.
+                    </p>
+                </div>
+
+                <div class="contact-cards-grid">
+                    <div class="contact-card" onclick="window.open('mailto:hello@company.com', '_self')">
+                        <div class="card-gradient gradient-1"></div>
+                        <div class="card-icon">📧</div>
+                        <h3 class="card-title">Email Us</h3>
+                        <p class="card-description">Send us an email and we'll respond within 24 hours</p>
+                        <div class="card-contact">trevorgitonga36@gmail.com</div>
+                        <div class="card-line"></div>
+                    </div>
+
+                    <div class="contact-card" onclick="window.open('tel:+254', '_self')">
+                        <div class="card-gradient gradient-2"></div>
+                        <div class="card-icon">📱</div>
+                        <h3 class="card-title">Call Us</h3>
+                        <p class="card-description">Speak directly with our team during business hours</p>
+                        <div class="card-contact">0113787156</div>
+                        <div class="card-line"></div>
+                    </div>
+
+                    <div class="contact-card" onclick="window.open('#', '_blank')">
+                        <div class="card-gradient gradient-3"></div>
+                        <div class="card-icon">💬</div>
+                        <h3 class="card-title">Live Chat</h3>
+                        <p class="card-description">Get instant support through our live chat system</p>
+                        <div class="card-contact">Available 24/7</div>
+                        <div class="card-line"></div>
+                    </div>
+
+                    <div class="contact-card" onclick="window.open('https://maps.google.com', '_blank')">
+                        <div class="card-gradient gradient-4"></div>
+                        <div class="card-icon">📍</div>
+                        <h3 class="card-title">Visit Us</h3>
+                        <p class="card-description">Come visit our office for an in-person meeting</p>
+                        <div class="card-contact">Olympics estate,Hse.1 or Ngei Phase1 Hse.99</div>
+                        <div class="card-line"></div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text">2.5k+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text">99%</div>
+                        <div class="stat-label">Response Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number gradient-text">&lt;1hr</div>
+                        <div class="stat-label">Avg Response</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="contact-form-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Send Us a Message</h2>
+                    <p class="section-description">
+                        Tell us about your project and we'll get back to you with ideas and solutions.
+                    </p>
+                </div>
+
+                <div class="form-container glass-card">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-floating">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+
+                            <div class="form-floating">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+
+                        <div class="form-floating">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">New Project</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea id="message" name="message" required rows="6" placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="modern-btn submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <div class="loading-spinner" style="display: none;">
+                                    <div class="spinner"></div>
+                                    <span>Sending Message<span class="loading-dots"></span></span>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">✨</div>
+                        <h3 class="success-title gradient-text">Message Sent Successfully!</h3>
+                        <p class="success-text">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Follow Our Journey</h2>
+                    <p class="section-description">
+                        Stay connected with us across all platforms. Join our community and never miss an update.
+                    </p>
+                </div>
+
+                <!-- Social Media Grid -->
+                <div class="social-grid">
+                    <div class="social-icon-container">
+                        <a href="https://facebook.com/yourcompany" target="_blank" class="social-icon social-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <div class="social-tooltip">Facebook</div>
+                    </div>
+
+                    <div class="social-icon-container">
+                        <a href="https://twitter.com/yourcompany" target="_blank" class="social-icon social-twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <div class="social-tooltip">Twitter</div>
+                    </div>
+
+                    <div class="social-icon-container">
+                        <a href="https://instagram.com/yourcompany" target="_blank" class="social-icon social-instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="social-tooltip">Instagram</div>
+                    </div>
+
+                    <div class="social-icon-container">
+                        <a href="https://linkedin.com/company/yourcompany" target="_blank" class="social-icon social-linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <div class="social-tooltip">LinkedIn</div>
+                    </div>
+
+                    <div class="social-icon-container">
+                        <a href="https://youtube.com/shieldhub" target="_blank" class="social-icon social-youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <div class="social-tooltip">YouTube</div>
+                    </div>
+
+                    <div class="social-icon-container">
+                        <a href="https://github.com/Trev-the-creator" target="_blank" class="social-icon social-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <div class="social-tooltip">GitHub</div>
+                    </div>
+
+                    <div class="social-icon-container">
+                        <a href="https://discord.gg/yourserver" target="_blank" class="social-icon social-discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <div class="social-tooltip">Discord</div>
+                    </div>
+
+                    <div class="social-icon-container">
+                        <a href="https://tiktok.com/@skii._.t" target="_blank" class="social-icon social-tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <div class="social-tooltip">TikTok</div>
+                    </div>
+                     <div class="social-icon-container">
+                        <a href="https://instagram.com/@skii._.t" target="_blank" class="social-icon social-tiktok">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="social-tooltip">TikTok</div>
+                    </div>
+                </div>
+
+                <!-- Newsletter CTA -->
+                <div class="newsletter-cta glass-card">
+                    <h3 class="cta-title gradient-text">Stay Updated</h3>
+                    <p class="cta-description">
+                        Subscribe to our newsletter and follow us on social media to get the latest updates, 
+                        behind-the-scenes content, and exclusive offers.
+                    </p>
+                    
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                        <button type="submit" class="modern-btn newsletter-btn">Subscribe</button>
+                    </form>
+                    
+                    <div class="newsletter-features">
+                        <span>✉️ Weekly newsletter</span>
+                        <span>🎁 Exclusive content</span>
+                        <span>🚀 Early access</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="contactUs.js"></script>
+</body>
+</html>
