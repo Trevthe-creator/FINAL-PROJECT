@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="authentication.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
    
     
 </head>
@@ -33,7 +33,7 @@
                     <a href="#products">Products</a>
                     <a href="#categories">Categories</a>
                     <a href="#about">About</a>
-                    <a href="contactUs.html">Contact</a>
+                   
                 </nav>
                 
                 <div class="header-actions">
@@ -46,7 +46,7 @@
                         <span class="cart-count" id="cartCount">0</span>
                     </button>
                     
-                    <button class="auth-btn" onclick="openAuthModal()">Sign In</button>
+                    <button class="auth-btn" onclick="goToPage()">Account</button>
                     
                     <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                         <span></span>
@@ -193,63 +193,7 @@
             </div>
         </div>
     </footer>
-
-    <!-- Auth Modal -->
-    <div class="modal-overlay" id="authModal">
-        <div class="modal">
-            <div class="modal-header">
-                <h2>Welcome to Kenyan Pride</h2>
-                <button class="modal-close" onclick="closeAuthModal()">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"/>
-                        <line x1="6" y1="6" x2="18" y2="18"/>
-                    </svg>
-                </button>
-            </div>
-            
-            <div class="modal-tabs">
-                <button class="tab-btn active" onclick="switchTab('login')">Sign In</button>
-                <button class="tab-btn" onclick="switchTab('register')">Sign Up</button>
-            </div>
-            
-            <div class="modal-content">
-                <form id="loginForm" class="auth-form active">
-                    <div class="form-group">
-                        <label for="loginEmail">Email</label>
-                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="loginPassword">Password</label>
-                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Sign In</button>
-                </form>
-                
-                <form id="registerForm" class="auth-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" placeholder="John" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" placeholder="Doe" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="registerEmail">Email</label>
-                        <input type="email" id="registerEmail" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="registerPassword">Password</label>
-                        <input type="password" id="registerPassword" placeholder="Create a password" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Create Account</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- Cart Sidebar -->
     <div class="cart-overlay" id="cartOverlay">
         <div class="cart-sidebar">
@@ -274,12 +218,12 @@
                 <button class="btn btn-primary btn-full">Checkout</button>
             </div>
         </div>
-    </div>
+    </div>         
 
     <!-- Toast Notifications -->
     <div class="toast-container" id="toastContainer"></div>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
  
 </body>
 </html>

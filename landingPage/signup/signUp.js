@@ -143,24 +143,13 @@ function switchToLogin() {
             return isValid;
         }
 
-        // Handle form submission
-        function handleSubmit(event) {
-  event.preventDefault();
-
-  // Validate fields, etc.
-  // Example:
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
   // Do any validation you need...
   if (email && password) {
-    // Redirect to another page:
-    window.location.href = 'index.html'; 
-  } else {
-    alert('Please fill in all fields.');
-  }
-}
-
+    alert('Please fill in all fields.')};
+  
 
         // Switch to login form
         function switchToLogin() {
@@ -187,8 +176,8 @@ function switchToLogin() {
         // Update form state and UI
         function updateFormState() {
             // Clear form
-            document.getElementById('email').value = '';
-            document.getElementById('password').value = '';
+            document.getElementById('email').value ;
+            document.getElementById('password').value;
             clearError('email');
             clearError('password');
             
@@ -232,8 +221,5 @@ function switchToLogin() {
             }
         }
 
-        // Initialize the form
-        document.addEventListener('DOMContentLoaded', function() {
-            updateFormState();
-        });
- 
+        
+        
