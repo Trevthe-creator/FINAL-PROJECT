@@ -44,7 +44,7 @@ window.handleSubmit = async function (event) {
       await createUserWithEmailAndPassword(auth, email, password);
       alert("🌟Congratulations Acc created!🌟");
     }
-    window.location.href = "homePage/home.html";
+    window.location.href = "https://preview--kenyan-pride.lovable.app/";
   } catch (error) {
     const field = error.code.includes("email") ? "email" : "password";
     showError(field, error.message);
