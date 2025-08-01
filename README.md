@@ -1,4 +1,8 @@
-# ProConnect
+# Kenyan Pride.
+It is basically a platform where professionals of both white collar and blue collar can get equal  job opportunities via this site.
+We major mainly on connecting/linking up job seekers to job offerss and it contains all variety of professionals e.g engineering, healthcare ,design industry , law and others .
+We believe this project will help many people to seek employment, and fix this major error affecting our beloved nation.
+
 
 **ProConnect** is a LinkedIn‑inspired web app that lets professionals present their CVs, connect via social media, get job offers, and showcase hobbies or talents for stronger human connection.
 
@@ -18,5 +22,19 @@
 - **Five broad profession categories**, each with **five professionals**.
 
 ### 📂 Structure
+  |- landingPAGE
+  |  |
+  |   contactUs
+  |  signUp
+  | 
+index.html
+READMR.md
+script.js
+style.css
+
+
+
+
+
 
 

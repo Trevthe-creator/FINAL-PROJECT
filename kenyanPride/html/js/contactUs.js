@@ -382,3 +382,17 @@ window.addEventListener('load', function() {
 console.log('🚀 Modern Contact Website Loaded Successfully!');
 console.log('✨ Features: Glass Morphism, Particle Background, Smooth Animations');
 console.log('🎨 Theme: Green Gradient with Modern Design');
+ 
+
+document.querySelector(".submit-btn").addEventListener("click", function (e) {
+    e.preventDefault(); // prevent form from submitting normally
+
+    const message = document.getElementById("message").value.trim();
+    if (!message) return alert("Please type a message first.");
+
+    const phoneNumber = "254113787156"; // replace with your WhatsApp number
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+    window.open(whatsappURL, "_blank"); // open WhatsApp chat in new tab
+});
